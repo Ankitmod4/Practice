@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    max-width: 100%;
+    background-color: black;
+    font-family: "Urbanist", sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.main {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(assets/bg4.jpg);
+    background-size: cover;
+    height: 93vh;
+    width: 100%;
+    position: relative;
+}
+
+.main .box {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    position: absolute;
+    background-color: rgb(0 0 0 / 40%);
+    height: 93vh;
+    width: 100%;
+}
+
+.navBar {
+    height: 104px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.buttons {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    margin-right: 50px;
+}
+
+#btn1 {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 8px 40px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#btn2 {
+    font-size: 1.5rem;
+    border: 1px solid #e50914;
+    padding: 8px 15px;
+    background-color: #e50914;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    background-color: #c11119;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    color: white;
+    text-align: center;
+}
+
+.content > :first-child {
+    font-size: 5.2rem;
+    font-weight: 1000;
+}
+
+.content > :nth-child(2) {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.content > :nth-child(3) {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.emailBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailBox input {
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #e50914;
+}
+
+.emailBox a {
+    padding: 18px 40px;
+    border: 2px solid #e50914;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.emailBox a:hover {
+    background-color: #c11119;
+}
+
+.sepration {
+    height: 8px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+}
+
+.SectionFirst, .SectionSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.first, .Second {
+    max-width: 80%;
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+}
+
+.SecHeading, .SecondHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecHeading > :nth-child(1), .SecondHeading > :nth-child(1) {
+    font-size: 5.2rem;
+    font-weight: bolder;
+}
+
+.SecHeading > :nth-child(2), .SecondHeading > :nth-child(2) {
+    font-size: 2.4rem;
+}
+
+.SecImage, .SecondImage {
+    position: relative;
+}
+
+.SecImage img, .SecondImage img {
+    position: relative;
+    z-index: 10;
+}
+
+.SecImage video, .SecondImage video {
+    top: 19%;
+    right: 13%;
+    position: absolute;
+}
+
+.FAQ {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.FAQ h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+    font-weight: bolder;
+}
+
+.FAQ .box {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    font-size: 2.4rem;
+    padding: 20px;
+    width: 75%;
+    margin: 5px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.FAQ .box:hover {
+    background-color: #414141;
+}
+
+.FAQ .sectionEnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.FAQ .sectionEnd > :nth-child(1) {
+    font-size: 2.4rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 960px) {
+    html, body {
+        font-size: 50%;
+    }
+
+    .main {
+        height: 80vh;
+        background-size: cover;
+    }
+
+    .navBar {
+        width: 90%;
+        height: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .btns {
+        margin-right: 0;
+    }
+
+    #btn1, #btn2 {
+        padding: 8px 20px;
+    }
+
+    .content > :first-child {
+        font-size: 4rem;
+    }
+
+    .content > :nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .content > :nth-child(3) {
+        font-size: 1.8rem;
+    }
+
+    .emailBox input {
+        padding: 15px;
+        width: 200px;
+        margin-right: 8px;
+    }
+
+    .emailBox a {
+        padding: 15px 20px;
+        font-size: 2rem;
+    }
+}
+
+ @media screen and (max-width: 600px) {
+    html, body {
+        font-size: 40%;
+    }
+
+    .main {
+        height: 70vh;
+        background-size: contain;
+    }
+
+    .navBar {
+        width: 100%;
+        height: 60px;
+        left: 50%;
+        padding: 0 5px;
+    }
+    
+    .logo img {
+        width: 100px;
+    }
+
+    .btns {
+        margin-right: 0;
+    }
+
+    #btn1, #btn2 {
+        padding: 5px 10px;
+    }
+
+    .content > :first-child {
+        font-size: 3.2rem;
+    }
+
+    .content > :nth-child(2) {
+        font-size: 1.8rem;
+    }
+
+    .content > :nth-child(3) {
+        font-size: 1.5rem;
+    }
+
+    .emailBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emailBox input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    .emailBox a {
+        padding: 10px 20px;
+        font-size: 1.8rem;
+    }
+
+    .SectionFirst, .SectionSecond, .FAQ {
+        padding: 20px 0;
+    }
+
+    .first, .Second {
+        flex-direction: column;
+    }
+
+    .SecHeading > :nth-child(1), .SecondHeading > :nth-child(1) {
+        font-size: 4rem;
+    }
+
+    .SecHeading > :nth-child(2), .SecondHeading > :nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .FAQ h2 {
+        font-size: 3.6rem;
+    }
+
+    .FAQ .box {
+        font-size: 2rem;
+        width: 90%;
+    }
+    .main{
+ 
+        width: 100%;
+        background-size: 850px 1000px;
+     }
+     .SecImage video {
+        width: 380px;
+     }
+    .image-video{
+        width: 480px;
+    }
+}
+
